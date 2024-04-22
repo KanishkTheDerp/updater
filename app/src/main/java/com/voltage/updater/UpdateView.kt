@@ -1,4 +1,4 @@
-package com.rising.updater
+package com.voltage.updater
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -32,14 +32,14 @@ import androidx.appcompat.widget.PopupMenu
 import androidx.core.content.ContextCompat.startActivity
 import com.google.android.material.chip.Chip
 import com.google.android.material.snackbar.Snackbar
-import com.rising.updater.controller.UpdaterController
-import com.rising.updater.controller.UpdaterService
-import com.rising.updater.misc.BuildInfoUtils
-import com.rising.updater.misc.Constants
-import com.rising.updater.misc.StringGenerator
-import com.rising.updater.misc.Utils
-import com.rising.updater.model.UpdateInfo
-import com.rising.updater.model.UpdateStatus
+import com.voltage.updater.controller.UpdaterController
+import com.voltage.updater.controller.UpdaterService
+import com.voltage.updater.misc.BuildInfoUtils
+import com.voltage.updater.misc.Constants
+import com.voltage.updater.misc.StringGenerator
+import com.voltage.updater.misc.Utils
+import com.voltage.updater.model.UpdateInfo
+import com.voltage.updater.model.UpdateStatus
 import java.io.File
 import java.io.IOException
 import java.sql.Timestamp
@@ -152,7 +152,7 @@ class UpdateView : LinearLayout {
         chipHeader.visibility = VISIBLE
         updateContainer.visibility = VISIBLE
         val currentDate = createDate(SystemProperties.getLong(Constants.PROP_BUILD_DATE, 0))
-        val currentVersion = SystemProperties.get(Constants.PROP_VERSION)
+        val currentVersion = SystemProperties.get(Constants.PROP_BUILD_VERSION)
         val buildDate = createDate(update!!.timestamp)
         val buildVersion = update!!.version
         chipDateCurrent.text = String.format("%s | %s", currentDate, currentVersion)

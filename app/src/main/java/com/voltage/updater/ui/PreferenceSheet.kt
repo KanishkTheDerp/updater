@@ -1,4 +1,4 @@
-package com.rising.updater.ui
+package com.voltage.updater.ui
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -13,11 +13,11 @@ import android.widget.Spinner
 import android.widget.Switch
 import android.widget.Toast
 import androidx.preference.PreferenceManager
-import com.rising.updater.R
-import com.rising.updater.UpdatesCheckReceiver
-import com.rising.updater.controller.UpdaterService
-import com.rising.updater.misc.Constants
-import com.rising.updater.misc.Utils
+import com.voltage.updater.R
+import com.voltage.updater.UpdatesCheckReceiver
+import com.voltage.updater.controller.UpdaterService
+import com.voltage.updater.misc.Constants
+import com.voltage.updater.misc.Utils
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 @SuppressLint("UseSwitchCompatOrMaterialCode")
